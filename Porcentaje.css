@@ -1,83 +1,102 @@
-* {
+*{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-body {
+html{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
     background-image: url(ff.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(5px);
+    background-attachment: fixed;
 }
 
-input[type="checkbox"] {
-    width: 3%;
+/* CHECKBOX: 30px x 30px */
+input[type="checkbox"]{
+    width: 30px;
     height: 30px;
 }
 
-input[type="radio"] {
-    width: 3%;
+/* RADIO: 30px x 30px */
+input[type="radio"]{
+    width: 30px;
     height: 30px;
 }
 
-input[type="text"] {
-    width: 22%;
+/* CALCULO: (220 / 1032.4) x 100 = 21.309569934134053% */
+input[type="text"]{
+    width: 21.309569934134053%;
     height: 30px;
     background-color: lightblue;
 }
 
-input[type="submit"] {
-    width: 45%;
+/* CALCULO: (450 / 1032.4) x 100 = 43.58775668345602% */
+input[type="submit"]{
+    width: 43.58775668345602%;
     height: 50px;
     border: 3px solid;
     background-color: darkseagreen;
-    display: inline-block;
+    border-radius: 12px;
+    box-sizing: border-box;
 }
 
-input[type="reset"] {
-    width: 45%;
+/* CALCULO: (450 / 1032.4) x 100 = 43.58775668345602% */
+input[type="reset"]{
+    width: 43.58775668345602%;
     height: 50px;
     border: 3px solid;
     background-color: lightcoral;
-    display: inline-block;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
-textarea {
-    width: 99%;
+/* CALCULO: (1025.966248 / 1032.4) x 100 = 99.377% */
+textarea{
+    width: 99.377%;
     height: 150px;
     background-color: lightblue;
     display: block;
-    margin-top: 1%;
-    margin-bottom: 4.5%;
+    margin-top: 10px;
+    margin-bottom: 45px;
     border: 0px lightseagreen solid;
     border-radius: 12px;
-    box-sizing: border-box;
 }
 
-div {
+/* CALCULO: (1032.4 / 1920) x 100 = 53.770833333333336% */
+/* CALCULO PADDING: (30 / 1920) x 100 = 1.5625% */
+div{
     border: 3px lightseagreen solid;
     background-color: azure;
-    width: 80%;
-    margin: 0 auto;
-    padding-right: 2%;
-    padding-left: 2%;
+    width: 53.770833333333336%;
+    margin: auto;
+    padding-right: 1.5625%;
+    padding-left: 1.5625%;
     border-radius: 12px;
-    box-sizing: border-box;
 }
 
-label {
+/* CENTRAR LOS BOTONES SIN FLEX */
+div:last-child{
+    text-align: center;
+}
+
+label{
     background-color: transparent;
 }
 
-h1 {
+h1{
     background-color: transparent;
     text-align: center;
 }
 
-div h2 {
+/* CALCULO: 0.45rem x 16px = 7.2px */
+div h2{
     background-color: transparent;
-    font-size: 20px;
+    font-size: 0.45rem;
 }
