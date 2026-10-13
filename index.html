@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE DE DATOS</title>
+    <link rel="stylesheet" href="profesores2.css">
+
+</head>
+<body>
+    <div>
+    <h1>FORMULARIO</h1>
+    </div>
+    <br>
+    <form action="profesores.php" method="GET">
+        <div>
+        <label>Isa Muñoz</label>
+        <input type="checkbox" name="profesor[]" value="Isa"/>
+        <br>
+        <label>Alberto Dominguez</label>
+        <input type="checkbox" name="profesor[]" value="Alberto"/>
+        <br>
+        <label>Ernesto Pro Gamer</label>
+        <input type="checkbox" name="profesor[]" value="Ernesto"/>
+        </div>
+        <br>
+        <div>
+        <label>PROGRAMACION</label>
+        <input type="radio" name="curso" value="Programacion"/>
+        <br>
+        <label>ENTORNO DE DESAROLLO</label>
+        <input type="radio" name="curso" value="Entorno de Desarrollo"/>
+        <br>
+        <label>BASE DE DATOS</label>
+        <input type="radio" name="curso" value="Base de Datos"/>
+        <br>
+        </div>
+        <br>
+        <div>
+        <label>Horas</label>
+        <input type="text" name="horas"/>
+        </div>
+        <br>
+        <div>
+            <h2>Observaciones</h1>
+        <textarea name="text"></textarea>
+        </div>
+        <br>
+        <div>
+        <input type="submit"/>
+        <input type="reset"/>
+        </div>
+    
+    
+</form>
+</body>
+</html>
